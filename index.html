@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مساحة آمنة | Safe Space — المرجع العلمي المتكامل عن التنمر</title>
+<meta name="description" content="مرجع علمي مبسّط لفهم التنمر والوقاية منه والتعامل معه، للأطفال والأسر والمدارس.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12263F;--blue:#1E4A76;--paper:#F8F5EE;--paper2:#F0EBDD;--gold:#B8934A;--gold-d:#8A6A28;--sage:#5E8C7B;--gray:#5B6676;--line:#E4DDCC;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{font-family:'IBM Plex Sans Arabic',Tahoma,Arial,sans-serif;font-size:17.5px;line-height:1.95;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:'Amiri','Times New Roman',serif;line-height:1.45}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.en,.no{font-family:'Montserrat',Arial,sans-serif}
+
+/* top */
+#bar{position:fixed;top:0;right:0;height:3px;width:0;background:var(--gold);z-index:100}
+header.top{position:sticky;top:0;z-index:60;background:var(--ink);color:#fff;height:56px;display:flex;align-items:center}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;width:100%}
+.brand{font-family:'Amiri',serif;font-weight:700;font-size:1.35rem;text-decoration:none}
+.brand b{color:var(--gold)}
+header.top a.hl{background:var(--gold);color:var(--ink);padding:6px 18px;border-radius:999px;font-weight:600;font-size:.92rem;text-decoration:none}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0E1F33,var(--ink) 55%,#173A5E);color:#fff;padding:84px 0 76px}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:26px 26px}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;animation:drift 20s ease-in-out infinite alternate}
+.o1{width:360px;height:360px;background:var(--blue);top:-80px;left:-60px}
+.o2{width:300px;height:300px;background:var(--sage);bottom:-90px;right:8%;animation-delay:-8s;opacity:.25}
+@keyframes drift{to{transform:translate(50px,38px) scale(1.12)}}
+.hero .wrap{position:relative;display:grid;gap:44px;grid-template-columns:1.1fr .9fr;align-items:center}
+.eyebrow{display:inline-block;color:var(--gold);border:1px solid rgba(184,147,74,.6);padding:2px 16px;border-radius:999px;font-size:.9rem;margin-bottom:18px}
+.hero h1{font-size:clamp(3rem,9vw,5.2rem);font-weight:700;line-height:1.15}
+.hero .en{letter-spacing:.3em;color:var(--gold);font-size:.85rem;direction:ltr;text-align:right;margin:4px 0 18px}
+.hero p.sub{font-size:1.2rem;color:#d4deea;max-width:540px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px}
+.chips span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:2px 14px;border-radius:999px;font-size:.88rem;color:#e6edf5}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 28px;border-radius:999px;text-decoration:none;font-weight:600;transition:transform .3s var(--ease),background .3s}
+.btn:hover{transform:translateY(-3px)}
+.btn.g{background:var(--gold);color:var(--ink)}
+.btn.o{border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.abs{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-top:3px solid var(--gold);border-radius:14px;padding:26px;backdrop-filter:blur(6px)}
+.abs h3{color:var(--gold);font-size:1.3rem;margin-bottom:6px}
+.abs p{font-size:1rem;line-height:1.9;color:#e1e9f2}
+.abs .mt{margin-top:14px;padding-top:12px;border-top:1px dashed rgba(255,255,255,.25);font-size:.9rem;color:#b9c7d8}
+
+/* layout */
+.layout{display:grid;gap:40px;grid-template-columns:210px 1fr;padding-top:40px}
+.toc{position:sticky;top:76px;align-self:start;display:flex;flex-direction:column;gap:2px;font-size:.93rem}
+.toc small{color:var(--gold-d);font-weight:600;margin-bottom:6px}
+.toc a{display:flex;gap:10px;padding:5px 12px;border-radius:8px;text-decoration:none;color:var(--gray);border-inline-start:2px solid var(--line);transition:.25s}
+.toc a i{font-style:normal;font-family:'Montserrat',sans-serif;font-size:.75rem;padding-top:3px;color:var(--gold-d)}
+.toc a.on{color:var(--ink);background:var(--paper2);border-color:var(--gold);font-weight:600}
+@media(max-width:1000px){
+ .layout{grid-template-columns:1fr;gap:0;padding-top:0}
+ .toc{position:sticky;top:56px;z-index:50;flex-direction:row;overflow-x:auto;background:var(--paper);padding:8px 0;border-bottom:1px solid var(--line);margin:0 -20px;padding-inline:20px;scrollbar-width:none}
+ .toc small{display:none}.toc a{white-space:nowrap;border:0;background:var(--paper2)}
+ .hero .wrap{grid-template-columns:1fr}
+}
+
+/* sections */
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+section:last-child{border:0}
+.sh{display:flex;align-items:baseline;gap:16px;margin-bottom:10px}
+.no{font-size:2.6rem;font-weight:600;color:transparent;-webkit-text-stroke:1.3px var(--gold);line-height:1}
+.sh h2{font-size:clamp(1.8rem,5vw,2.4rem)}
+.lead{color:var(--gray);max-width:720px;margin:6px 0 28px}
+.g{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:12px;padding:22px;transition:transform .4s var(--ease),box-shadow .4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 34px -18px rgba(18,38,63,.35)}
+.card h3{font-size:1.25rem;margin-bottom:4px;color:var(--blue)}
+.card p,.card li{font-size:.98rem;color:var(--gray);line-height:1.85}
+.card ul{padding-inline-start:18px}
+.note{margin-top:22px;padding:14px 20px;background:var(--paper2);border-inline-start:4px solid var(--sage);border-radius:8px;font-size:.97rem}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
+table{width:100%;border-collapse:collapse;min-width:560px;font-size:.97rem}
+th{background:var(--ink);color:#fff;font-weight:600;padding:12px 16px;text-align:start}
+td{padding:12px 16px;border-top:1px solid var(--line)}
+td:first-child{font-weight:600;color:var(--blue)}
+td.hi,th.hi{background:#f6ecd5}th.hi{background:var(--gold-d);color:#fff}
+
+/* tabs */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{font:inherit;font-weight:500;padding:8px 20px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--gray);cursor:pointer;transition:.3s}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pn{display:none;animation:fade .6s var(--ease)}
+.pn.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}}
+.pn .card{border-top-width:3px}
+
+/* accordion */
+details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+summary{cursor:pointer;padding:16px 22px;font-family:'Amiri',serif;font-weight:700;font-size:1.2rem;color:var(--blue);list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--gold-d);font-size:1.5rem;line-height:1;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details[open]{border-color:var(--gold)}
+details ol,details ul{padding:0 42px 18px 22px;color:var(--gray);display:grid;gap:4px}
+
+/* steps */
+.steps{list-style:none;counter-reset:s;display:grid;gap:14px;position:relative}
+.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px 16px 20px;padding-inline-start:70px;position:relative}
+.steps li::before{content:counter(s);position:absolute;inset-inline-start:18px;top:14px;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--gold);display:grid;place-items:center;font-family:'Montserrat',sans-serif;font-weight:600}
+
+/* stats */
+.third{display:flex;gap:18px;justify-content:center;margin:10px 0 18px}
+.pp{width:54px;height:90px;fill:#cfc6b0;transition:fill .8s,transform .8s var(--ease)}
+.in .pp:first-child{fill:var(--gold);transform:scale(1.15) translateY(-6px);transition-delay:.5s}
+.bigq{text-align:center;font-family:'Amiri',serif;font-size:1.5rem;color:var(--blue)}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;margin-bottom:22px}
+.stat .src{text-align:center;color:var(--gray);font-size:.9rem;margin-top:6px}
+.qs{list-style:none;display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.qs li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 16px;font-size:.96rem}
+.qs li::before{content:"؟";color:var(--gold-d);font-weight:700;margin-inline-end:8px}
+
+/* quote */
+blockquote{margin-top:22px;background:var(--ink);color:#fff;border-radius:14px;padding:24px 28px;font-family:'Amiri',serif;font-size:1.35rem;line-height:1.9}
+blockquote small{display:block;font-family:'IBM Plex Sans Arabic',sans-serif;font-size:.85rem;color:var(--gold);margin-top:6px}
+
+/* quiz */
+.quiz{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;max-width:720px}
+.quiz .pr{color:var(--gold-d);font-weight:600;font-size:.9rem}
+.quiz .q{font-family:'Amiri',serif;font-size:1.5rem;margin:8px 0 18px;line-height:1.7}
+.quiz .ans{display:flex;gap:10px}
+.quiz button{font:inherit;font-weight:600;padding:10px 30px;border-radius:999px;border:1.5px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer;transition:.25s}
+.quiz button:hover{background:var(--ink);color:#fff}
+.quiz .fb{margin-top:16px;padding:12px 16px;border-radius:10px;background:var(--paper2);animation:fade .5s}
+.quiz .fb.ok{border-inline-start:4px solid var(--sage)}
+.quiz .fb.no{border-inline-start:4px solid var(--gold)}
+.quiz .nx{margin-top:14px;background:var(--ink);color:#fff}
+
+/* help */
+.help{background:var(--ink);color:#fff;border-radius:22px;padding:44px 28px;text-align:center;margin:52px 0}
+.help h2{font-size:2.2rem}
+.help .n{font-family:'Montserrat',sans-serif;font-size:clamp(3.4rem,12vw,5.5rem);font-weight:600;color:var(--gold);line-height:1.2;animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{50%{text-shadow:0 0 28px rgba(184,147,74,.55)}}
+.help p{max-width:560px;margin:8px auto;color:#d4deea}
+.help .u{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2);font-size:.97rem}
+
+/* refs */
+ol.refs{padding-inline-start:24px;display:grid;gap:10px}
+ol.refs a{color:var(--blue);font-weight:600}
+ol.refs small{display:block;color:var(--gray)}
+footer{background:var(--ink);color:#b9c7d8;text-align:center;padding:36px 0;font-size:.93rem}
+footer b{color:#fff;font-family:'Amiri',serif;font-size:1.3rem;display:block}
+footer .l{margin:10px 0;display:flex;gap:18px;justify-content:center}
+footer .l a{color:var(--gold)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.g>.rv:nth-child(2){transition-delay:.1s}.g>.rv:nth-child(3){transition-delay:.2s}.g>.rv:nth-child(4){transition-delay:.3s}.g>.rv:nth-child(5){transition-delay:.4s}.g>.rv:nth-child(6){transition-delay:.5s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="p" viewBox="0 0 24 40"><circle cx="12" cy="8" r="6"/><path d="M3 38V22a9 9 0 0 1 18 0v16z"/></symbol></svg>
+
+<header class="top"><div class="wrap"><a class="brand" href="#top">مساحة <b>آمنة</b></a><a class="hl" href="#s11">طلب المساعدة</a></div></header>
+
+<div class="hero" id="top">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">مرجع علمي مبسّط</span>
+      <h1>مساحة آمنة</h1>
+      <div class="en">SAFE SPACE</div>
+      <p class="sub">معًا ضد التنمر: دليل علمي متكامل لفهمه، والوقاية منه، والتعامل معه بوعي ومسؤولية.</p>
+      <div class="chips"><span>التنمر</span><span>الصحة النفسية</span><span>البيئة المدرسية</span><span>التنمر الإلكتروني</span><span>الوقاية</span></div>
+      <div class="btns"><a class="btn g" href="#s1">ابدأ القراءة</a><a class="btn o" href="#s10">اختبر وعيك</a></div>
+    </div>
+    <aside class="abs">
+      <h3>ملخص</h3>
+      <p>يعرض هذا المرجع مفهوم التنمر وأنواعه وأسبابه وعلاماته وآثاره، ثم يقدم أدوات عملية للوقاية والتدخل موجّهة للطفل والأسرة والمعلم، مع منهجية لقراءة الإحصائيات بوعي.</p>
+      <p class="mt">المحتوى للتوعية والتثقيف، وليس بديلًا عن التشخيص أو الاستشارة المتخصصة.</p>
+    </aside>
+  </div>
+</div>
+
+<div class="wrap layout">
+<nav class="toc" aria-label="فهرس المحتوى">
+  <small>فهرس المرجع</small>
+  <a href="#s1"><i>01</i>المفهوم</a><a href="#s2"><i>02</i>الأنواع</a><a href="#s3"><i>03</i>الأسباب</a><a href="#s4"><i>04</i>العلامات</a>
+  <a href="#s5"><i>05</i>الآثار</a><a href="#s6"><i>06</i>الوقاية</a><a href="#s7"><i>07</i>التدخل</a><a href="#s8"><i>08</i>الإلكتروني</a>
+  <a href="#s9"><i>09</i>الأرقام</a><a href="#s10"><i>10</i>اختبار</a><a href="#s11"><i>11</i>المساعدة</a><a href="#s12"><i>12</i>المراجع</a>
+</nav>
+
+<main>
+<section id="s1">
+  <div class="sh rv"><span class="no">01</span><h2>مفهوم التنمر</h2></div>
+  <p class="lead rv">سلوك عدواني متعمد ومتكرر، يستخدم فيه شخص قوته الجسدية أو الاجتماعية أو النفسية أو الرقمية لإيذاء آخر أو تخويفه أو التقليل منه، وغالبًا مع اختلال في القوة يصعّب على المتعرض له إيقافه بمفرده.</p>
+  <div class="tw rv"><table>
+    <tr><th>المعيار</th><th>خلاف عادي</th><th>مزاح</th><th class="hi">تنمر</th></tr>
+    <tr><td>القصد</td><td>ليس إيذاءً</td><td>ليس إيذاءً</td><td class="hi">إيذاء متعمد</td></tr>
+    <tr><td>التكرار</td><td>عارض</td><td>عارض</td><td class="hi">متكرر أو نمط مستمر</td></tr>
+    <tr><td>توازن القوة</td><td>متقارب</td><td>متقارب</td><td class="hi">مختل</td></tr>
+    <tr><td>رضا الطرفين</td><td>غير مطروح</td><td>موجود، ويتوقف عند الضيق</td><td class="hi">غير موجود</td></tr>
+  </table></div>
+  <p class="note rv">قد تكون كلمة واحدة جارحة وتستوجب الجدية حتى لو لم تُعد تنمرًا بالمعنى الدقيق. المهم ألا نقلل من الأذى لمجرد أنه حدث مرة واحدة.</p>
+</section>
+
+<section id="s2">
+  <div class="sh rv"><span class="no">02</span><h2>أنواع التنمر</h2></div>
+  <div class="g">
+    <article class="card rv"><h3>اللفظي</h3><p>سخرية وشتائم وألقاب مهينة وتهديد، أو تعليق على الشكل أو الوزن أو الصوت.</p></article>
+    <article class="card rv"><h3>الجسدي</h3><p>ضرب ودفع وركل وشد شعر، أو إتلاف الممتلكات وأخذها بالقوة.</p></article>
+    <article class="card rv"><h3>الاجتماعي</h3><p>استبعاد متعمد وتحريض على المقاطعة ونشر شائعات وإحراج أمام الجماعة.</p></article>
+    <article class="card rv"><h3>الإلكتروني</h3><p>إساءات ونشر صور دون إذن وحسابات وهمية وتشهير وتهديد عبر الإنترنت.</p></article>
+    <article class="card rv"><h3>النفسي</h3><p>تخويف وتلاعب وضغط متكرر وإشعار الشخص بأنه غير مرغوب فيه.</p></article>
+    <article class="card rv"><h3>أشكال أخرى</h3><p>بسبب الشكل أو الإعاقة أو الفقر أو اللهجة، وداخل الأسرة أو الألعاب الرقمية.</p></article>
+  </div>
+</section>
+
+<section id="s3">
+  <div class="sh rv"><span class="no">03</span><h2>الأسباب</h2></div>
+  <p class="lead rv">لا يوجد سبب واحد للتنمر، بل تتداخل عوامل أسرية ونفسية واجتماعية ومدرسية ورقمية.</p>
+  <div class="g">
+    <article class="card rv"><h3>أسرية</h3><ul><li>الضرب والإهانة كأسلوب تربية</li><li>مشاهدة العنف في البيت</li><li>غياب الحدود الواضحة</li><li>إهمال الاحتياج العاطفي</li></ul></article>
+    <article class="card rv"><h3>نفسية وسلوكية</h3><ul><li>ضعف التحكم في الغضب</li><li>الرغبة في السيطرة</li><li>صعوبة فهم مشاعر الآخرين</li><li>البحث عن مكانة بين الأقران</li></ul></article>
+    <article class="card rv"><h3>مدرسية واجتماعية</h3><ul><li>تشجيع الجماعة على السخرية</li><li>تجاهل الكبار للإيذاء</li><li>الخوف من الإبلاغ</li><li>غياب قواعد عادلة</li></ul></article>
+    <article class="card rv"><h3>رقمية</h3><ul><li>سهولة إخفاء الهوية</li><li>سرعة انتشار المحتوى</li><li>غياب الرقابة الأسرية الواعية</li></ul></article>
+  </div>
+  <p class="note rv">ليس كل متنمر مضطربًا نفسيًا، وقد يكون بعض المتنمرين تعرضوا للإيذاء، لكن ذلك لا يبرر إيذاء الآخرين.</p>
+</section>
+
+<section id="s4">
+  <div class="sh rv"><span class="no">04</span><h2>علامات الاكتشاف</h2></div>
+  <div class="tabs" data-tabs>
+    <button class="on">الطفل المتعرض</button><button>الطفل المتنمر</button><button>التنمر الإلكتروني</button>
+  </div>
+  <div class="pn on card"><ul><li>رفض الذهاب للمدرسة أو الرجوع مبكرًا</li><li>أدوات مفقودة أو ملابس ممزقة أو كدمات غير مفسرة</li><li>انعزال أو فقدان الأصدقاء فجأة</li><li>تراجع الدرجات وفقدان الاهتمام بالمذاكرة</li><li>صداع وألم بطن متكرر، واضطراب نوم أو كوابيس</li><li>طلب نقود إضافية دون سبب واضح</li></ul></div>
+  <div class="pn card"><ul><li>شجارات لفظية أو جسدية متكررة</li><li>تبرير الإيذاء ولوم الآخرين ورفض الاعتراف بالخطأ</li><li>استخدام التهديد والسخرية للسيطرة</li><li>عدوانية مع الإخوة أو الزملاء</li><li>اهتمام مبالغ فيه بالشعبية والسيطرة على المجموعة</li></ul></div>
+  <div class="pn card"><ul><li>إغلاق الهاتف بسرعة عند اقتراب أحد</li><li>ضيق واضح بعد استخدام وسائل التواصل</li><li>الانسحاب من ألعاب ومجموعات كان يحبها</li><li>تغيير الحسابات أو إغلاقها فجأة</li><li>الخوف من فتح الرسائل والإشعارات</li></ul></div>
+  <p class="note rv">هذه علامات تحذيرية وليست دليلًا قاطعًا، فقد ترتبط بمشكلات أخرى. المطلوب حوار هادئ لفهم السبب، لا استنتاج متسرع.</p>
+</section>
+
+<section id="s5">
+  <div class="sh rv"><span class="no">05</span><h2>الآثار</h2></div>
+  <div class="g">
+    <article class="card rv"><h3>نفسية</h3><p>انخفاض الثقة بالنفس وقلق وحزن وشعور بالوحدة ولوم الذات.</p></article>
+    <article class="card rv"><h3>دراسية</h3><p>ضعف التركيز وتراجع المستوى وغياب متكرر وتجنب المشاركة.</p></article>
+    <article class="card rv"><h3>اجتماعية</h3><p>صعوبة تكوين الصداقات وفقدان الثقة بالآخرين وخوف من التعبير عن الرأي.</p></article>
+    <article class="card rv"><h3>جسدية</h3><p>صداع وإرهاق واضطراب نوم قد يرتبط بالتوتر، وتحتاج تقييمًا طبيًا إن استمرت.</p></article>
+  </div>
+  <p class="note rv">التعرض للتنمر قد يزيد خطر القلق والاكتئاب، ولا يعني ذلك أن كل متعرض سيصاب بهما. أي حديث عن إيذاء النفس يؤخذ بجدية شديدة، مع إبلاغ شخص بالغ موثوق وطلب مساعدة متخصصة فورًا.</p>
+</section>
+
+<section id="s6">
+  <div class="sh rv"><span class="no">06</span><h2>الوقاية</h2></div>
+  <div class="g">
+    <article class="card rv"><h3>في الأسرة</h3><ul><li>الاستماع دون سخرية</li><li>تجنب الإهانة والضرب</li><li>تعليم احترام الاختلاف</li><li>تشجيع التعبير عن المشاعر</li><li>تعليم الاعتذار وتحمل المسؤولية</li></ul></article>
+    <article class="card rv"><h3>في المدرسة</h3><ul><li>سياسة مكتوبة ضد التنمر</li><li>قناة إبلاغ آمنة وسرية</li><li>تدريب المعلمين</li><li>مراقبة الفسحة والممرات</li><li>حماية المُبلِّغ من الانتقام</li></ul></article>
+    <article class="card rv"><h3>بين الأقران</h3><ul><li>عدم الضحك على الإهانة</li><li>عدم مشاركة المحتوى المسيء</li><li>مساندة الزميل بعد الموقف</li><li>طلب مساعدة شخص بالغ</li></ul></article>
+  </div>
+  <blockquote class="rv">«المسلم من سلم المسلمون من لسانه ويده»<small>حديث نبوي متفق عليه، رواه البخاري ومسلم. وللاستزادة: سورة الحجرات، الآية 11.</small></blockquote>
+</section>
+
+<section id="s7">
+  <div class="sh rv"><span class="no">07</span><h2>التدخل والتعامل</h2></div>
+  <div class="rv">
+  <details open><summary>الطفل المتعرض للتنمر</summary><ol><li>ألا يلوم نفسه، فالمسؤولية على من اختار الإيذاء.</li><li>قول «توقف، لا أقبل هذه الطريقة» إن كان ذلك آمنًا.</li><li>الابتعاد إلى مكان فيه شخص بالغ.</li><li>إبلاغ شخص يثق به، وتجربة غيره إن لم يجد مساعدة.</li><li>تدوين التواريخ والأماكن والشهود.</li></ol></details>
+  <details><summary>الأم والأسرة</summary><ol><li>الاستماع للقصة كاملة دون مقاطعة أو انفعال.</li><li>شكر الطفل على ثقته وطمأنته: «أنا أصدقك ولست مخطئًا».</li><li>معرفة ما حدث ومتى وأين ومن حضر.</li><li>الاتفاق معه على خطة آمنة والتواصل مع المدرسة بهدوء.</li><li>المتابعة للتأكد من تحسن الوضع فعلًا.</li></ol></details>
+  <details><summary>حين يكون الابن هو المتنمر</summary><ol><li>الاستماع منه ومن المدرسة قبل الحكم أو الدفاع.</li><li>توضيح أن السلوك مرفوض حتى لو كان «مزاحًا».</li><li>عواقب مناسبة غير عنيفة مع تحمل المسؤولية.</li><li>تعليمه فهم مشاعر الآخر والتعبير عن الغضب دون إيذاء.</li><li>طلب أخصائي إن تكرر السلوك أو اشتد.</li></ol></details>
+  <details><summary>المعلم والمدرسة</summary><ol><li>إيقاف السلوك فورًا إن أمكن بأمان.</li><li>الاستماع لكل طرف على حدة دون مصالحة فورية.</li><li>توثيق الواقعة وإبلاغ المسؤولين وولي الأمر.</li><li>تجنب إحراج المتنمر علنًا، وتعليمه سلوكًا بديلًا.</li><li>المتابعة بعد التدخل، فالعقاب وحده لا يكفي.</li></ol></details>
+  </div>
+</section>
+
+<section id="s8">
+  <div class="sh rv"><span class="no">08</span><h2>التنمر الإلكتروني</h2></div>
+  <p class="lead rv">أخطر ما فيه أنه يلاحق الطفل في بيته، وينتشر بسرعة، ويبقى أثره على الإنترنت.</p>
+  <ol class="steps rv">
+    <li><b>لا ترد بالمثل.</b> الرد بإهانة أو تهديد يزيد الموقف سوءًا.</li>
+    <li><b>احفظ الأدلة.</b> لقطات الشاشة واسم الحساب والتاريخ، قبل الحظر أو الحذف.</li>
+    <li><b>احظر وأبلغ المنصة</b> عن الحساب والمحتوى المسيء.</li>
+    <li><b>أخبر شخصًا بالغًا موثوقًا</b> ولا تتحمل الأمر وحدك.</li>
+    <li><b>في حالات الابتزاز:</b> لا تدفع ولا ترسل صورًا أو معلومات إضافية، واحتفظ بالأدلة، واطلب مساعدة الجهات المختصة. وفي مصر يمكن الاتصال بخط نجدة الطفل 16000.</li>
+  </ol>
+</section>
+
+<section id="s9">
+  <div class="sh rv"><span class="no">09</span><h2>قراءة الأرقام بوعي</h2></div>
+  <div class="stat rv">
+    <div class="third"><svg class="pp"><use href="#p"/></svg><svg class="pp"><use href="#p"/></svg><svg class="pp"><use href="#p"/></svg></div>
+    <div class="bigq">نحو طفل من كل ثلاثة متعلمين أفاد بتعرضه للتنمر خلال الشهر السابق</div>
+    <p class="src">وفق بيانات تناولها تقرير اليونسكو عن العنف في التعليم. تختلف النسب حسب الدولة والعمر وطريقة القياس.</p>
+  </div>
+  <h3 class="rv" style="margin-bottom:10px">أسئلة قبل الاستشهاد بأي إحصائية</h3>
+  <ul class="qs rv">
+    <li>في أي دولة أُجريت الدراسة؟</li><li>كم عدد الأطفال المشمولين؟</li><li>ما الفئة العمرية؟</li><li>هل تقيس التنمر المدرسي أم الإلكتروني؟</li><li>هل السؤال عن آخر شهر أم آخر سنة؟</li><li>هل النسبة للجنسين معًا أم لكل فئة؟</li>
+  </ul>
+  <p class="note rv">لا تُقارَن نسب دراستين مختلفتين في المنهج كأنهما قياس واحد، ولا تُعتبر كل أرقام العنف ضد الأطفال أرقامًا عن التنمر.</p>
+</section>
+
+<section id="s10">
+  <div class="sh rv"><span class="no">10</span><h2>اختبر وعيك</h2></div>
+  <div class="quiz rv" id="quiz"></div>
+</section>
+
+<div class="help rv" id="s11">
+  <h2>طلب المساعدة</h2>
+  <div class="n">16000</div>
+  <p>خط نجدة الطفل في مصر، للمساعدة والإرشاد في حالات تعرض الأطفال للخطر.</p>
+  <p class="u">إذا كان هناك خطر مباشر أو أفكار لإيذاء النفس، فلا تبقَ وحدك: أخبر شخصًا بالغًا موثوقًا فورًا، واطلب مساعدة طبية طارئة. طلب المساعدة قوة وليس ضعفًا.</p>
+</div>
+
+<section id="s12">
+  <div class="sh rv"><span class="no">12</span><h2>المراجع</h2></div>
+  <ol class="refs rv">
+    <li><a href="https://www.unesco.org" target="_blank" rel="noopener">اليونسكو (UNESCO)</a><small>تقارير العنف والتنمر في التعليم</small></li>
+    <li><a href="https://www.who.int" target="_blank" rel="noopener">منظمة الصحة العالمية (WHO)</a><small>مواد عن العنف ضد الأطفال وآثاره</small></li>
+    <li><a href="https://www.unicef.org/egypt" target="_blank" rel="noopener">اليونيسف مصر (UNICEF Egypt)</a><small>مواد عن التنمر وآثاره وطرق مواجهته</small></li>
+  </ol>
+</section>
+</main>
+</div>
+
+<footer>
+  <div class="wrap"><b>مساحة آمنة | Safe Space</b>
+  <div>لا مكان للتنمر، لكل إنسان مكان</div>
+  <div class="l"><a href="privacy.html">الخصوصية</a><a href="terms.html">سياسة الاستخدام</a></div>
+  <div>المحتوى للتوعية والتثقيف فقط، وليس بديلًا عن المختصين.</div></div>
+</footer>
+
+<script>
+(function(){
+var $=function(s,r){return(r||document).querySelectorAll(s)};
+/* progress */
+var bar=document.getElementById('bar');
+addEventListener('scroll',function(){var h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+/* reveal */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+$('.rv').forEach(function(el){io.observe(el)});
+/* scrollspy */
+var links=$('.toc a');
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-30% 0px -60% 0px'});
+$('section,.help').forEach(function(s){if(s.id)so.observe(s)});
+/* tabs */
+$('[data-tabs]').forEach(function(t){var bs=$('button',t),ps=[];var n=t.nextElementSibling;while(n&&n.classList.contains('pn')){ps.push(n);n=n.nextElementSibling}
+bs.forEach(function(b,i){b.addEventListener('click',function(){bs.forEach(function(x,j){x.classList.toggle('on',i===j);ps[j].classList.toggle('on',i===j)})})})});
+/* quiz */
+var Q=[
+['التنمر يعني أي خلاف يحدث بين طفلين.',false,'التنمر إيذاء متعمد ومتكرر مع اختلال في القوة، أما الخلاف العادي فبين طرفين متقاربين.'],
+['المزاح الذي يتضايق منه الطرف الآخر يجب أن يتوقف.',true,'صحيح. المزاح الحقيقي مقبول من الطرفين، ويتوقف عند الضيق.'],
+['أفضل رد على التنمر هو الانتقام بالضرب.',false,'الأفضل الابتعاد وطلب المساعدة. الدفاع عن النفس يكون لإيقاف خطر مباشر فقط.'],
+['حفظ لقطات الشاشة قبل الحظر خطوة مهمة في التنمر الإلكتروني.',true,'صحيح. الأدلة تساعد الأسرة والمدرسة والجهات المختصة على التصرف.'],
+['الطفل الذي يتنمر لا يمكن أن يتغير.',false,'يمكنه التعلم لو تحمل المسؤولية وحصل على توجيه ومحاسبة مناسبين.']];
+var box=document.getElementById('quiz'),i=0,s=0;
+function show(){
+ if(i>=Q.length){var m=s>=4?'وعي ممتاز، شارك ما تعلمته مع غيرك.':s>=2?'بداية جيدة، راجع الفصول وأعد المحاولة.':'لا بأس، ابدأ من الفصل الأول وأعد الاختبار.';
+  box.innerHTML='<div class="pr">النتيجة</div><div class="q">'+s+' من '+Q.length+'</div><p>'+m+'</p><div class="ans" style="margin-top:16px"><button id="rs">إعادة الاختبار</button></div>';
+  document.getElementById('rs').onclick=function(){i=0;s=0;show()};return}
+ box.innerHTML='<div class="pr">سؤال '+(i+1)+' من '+Q.length+'</div><div class="q">'+Q[i][0]+'</div><div class="ans"><button data-a="1">صح</button><button data-a="0">خطأ</button></div><div id="fb"></div>';
+ $('.ans button',box).forEach(function(b){b.onclick=function(){
+  var ok=(b.dataset.a==='1')===Q[i][1];if(ok)s++;
+  $('.ans button',box).forEach(function(x){x.disabled=true});
+  document.getElementById('fb').innerHTML='<div class="fb '+(ok?'ok':'no')+'"><b>'+(ok?'إجابة صحيحة. ':'إجابة غير دقيقة. ')+'</b>'+Q[i][2]+'</div><button class="nx" id="nx">'+(i===Q.length-1?'عرض النتيجة':'السؤال التالي')+'</button>';
+  document.getElementById('nx').onclick=function(){i++;show()}}})}
+show();
+})();
+</script>
+</body>
+</html>
